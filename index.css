@@ -315,3 +315,48 @@ footer {
     font-weight: 400;
     margin-bottom: 3rem;
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.3);
+}
+
+.modal .demo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal .demo .close-btn {
+    position: absolute;
+    top: 40px;
+    right: -60px;
+
+    outline: none;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 0;
+
+    cursor: pointer;
+}
